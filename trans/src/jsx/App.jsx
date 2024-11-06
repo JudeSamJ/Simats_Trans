@@ -1,10 +1,12 @@
 import React from 'react';
 import Card from './Card';
-import './index.css'
+import Navbar from './Navbar';
+import '../css/index.css'
 
 const App = () => {
   return (
     <div className='App'>
+      <Navbar />
       <div className='right-container'>
       <Card />
       <Card />
