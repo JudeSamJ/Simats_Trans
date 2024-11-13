@@ -1,35 +1,20 @@
-.card
- {
- border: 1px solid black;
- height: 300px;
- margin-top: 180px;
- width: 180px;
- float: left;
- background-color: white;
- margin-left: 32px;
- border-radius: 10px; 
- }
+/* General reset for body */
+.card {
+    display: flex;
+    align-items: center;      /* Centers vertically */
+    justify-content: center;  /* Centers horizontally */
+    height: 100vh;            /* Full viewport height */
+    margin: 0;                /* Remove default margin */
+    background-color: #f2f2f2; /* Optional background color for contrast */
+}
 
-
-.card-body {
-    margin-top: 16px;
-    width: 100px;
-    padding-right: 20px;
-    margin-right: 20px;
-    padding-left: 20px;
-   }
-   .card-body > img 
-    {
-    position:relative;
-    height: 80px;
-    width: 150px;
-    animation: rotation 2s infinite linear;
-    }
-   @keyframes rotation {
-    from {
-    transform: rotate(0deg);
-    }
-    to {
-    transform: rotate(359deg);
-    }
-   }
+/* Styles for the card */
+.card-top {
+    background-color: #fff;          /* Card background color */
+    padding: 20px;                   /* Inner spacing */
+    border-radius: 10px;             /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: fit-content; 
+    max-height: fit-content;               /* Max width for the card */
+    text-align: center;              /* Center-align text within the card */
+}

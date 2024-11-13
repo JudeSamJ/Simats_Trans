@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import Navbar from './Navbar';
+import Bottombar from './Bottombar'
 import '../css/index.css'
 
 const App = () => {
@@ -9,10 +10,8 @@ const App = () => {
       <Navbar />
       <div className='right-container'>
       <Card />
-      <Card />
-      <Card />
       </div>
-     
+      <Bottombar/>
     </div>
   );
 };
